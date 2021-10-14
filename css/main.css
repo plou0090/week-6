@@ -93,11 +93,16 @@ body{
     width: 40vw;
     height: 40vh;
 
-    background-image: url("../images/bread.jpg");
+    /* background-image: url("../images/bread.jpg");
     /* you can control the location of the image
-    horizontal comes first */
+    horizontal comes first 
     background-position: 40px 20px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+
+    /* the background shorthand replaces the indivual elements and puts them in one line of code */
+    background: blue url("../images/bread.jpg") no-repeat right bottom;
+
+
 }
 
 .using-percent{
@@ -122,4 +127,25 @@ body{
     /* set the distance between the letters (kerning) */
     text-decoration: none;
     /* this will remove the underline from links */
+}
+
+.image-contain, .image-cover{
+    border: black 3px solid;
+    width: 50vw;
+    height: 20vh;
+    background-image: url("../images/bread.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* background-size allows you to scale your images - either a fixed value or cover or contain */
+
+.image-contain{
+    /* will ensure the background will always be contained within the element */
+    background-size: contain;
+}
+
+.image-cover{
+    /* cover will scale the background so that it always covers the whole element */
+    background-size: cover;
 }
