@@ -55,6 +55,9 @@ table {
 
 html{
     font-size: 22px;
+    /* setting a default font for the whole page
+    always provide a list of fonts as back up options - end with generic font type */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
@@ -91,6 +94,23 @@ body{
 .using-percent{
     /* percent responds to the size of the parent element */
     background-color: whitesmoke;
-    width: 50%;
+    width: 80%;
     height: 50%;
+
+    /* CSS typography options */
+    font-size: 16px;
+    /* you can set font size using any unit of mesaurement */
+    
+    line-height: 1.3em;
+    /* Line height is for font only
+    EM size is relative to the font size set above */
+
+    font-weight: bold;
+    /* font weight is how thick the font is */
+    font-style: italic;
+    /* style adds things like italic */
+    letter-spacing: 0.1em;
+    /* set the distance between the letters (kerning) */
+    text-decoration: none;
+    /* this will remove the underline from links */
 }
